@@ -11,17 +11,19 @@
 
 並即時觀察這些變化如何影響回歸線與離群點辨識。
 
-Demo 網站: [https://aiotda.streamlit.app/](https://aiotda.streamlit.app/)
+Demo 網站: [[https://aiotda.streamlit.app/](https://aiotda.streamlit.app/)](https://arzuki-zheng-linear-regression-vibe-coding-app-i3zznb.streamlit.app/)
+prompt 指令: prompt.md
+process 過程: process.md
 
 ---
 
 ## 開發過程
-- 初始設定 (`0_devLog.md`, `Todo.md`)
-- 修改並驗證專案計畫
+- 按照規格需求書下prompt
 - 建立 `app.py` 作為 Streamlit 主程式
 - 設定虛擬環境與 `requirements.txt`
 - 成功執行並部署至 Streamlit Cloud
-
+- 修改並驗證專案計畫
+- 下指令將prompt和process整理輸出
 ---
 
 ## 線性回歸實作流程
