@@ -1,54 +1,60 @@
-# Process 記錄
+# Prompt 記錄
 
-## 對話過程整理
+## 專案名稱
+**Interactive Linear Regression Visualizer**  
+這是一個使用 Streamlit 開發的 Web 應用程式，能讓使用者互動式地視覺化線性回歸。使用者可以調整參數（資料點數量、線性關係係數、雜訊量），並即時觀察這些變化如何影響回歸線與離群點的辨識。
 
-### 使用者
-我要請你幫我做出一個線性回歸的模型，但他有幾點規範，我把內容貼給你，然後你要記住，要把我給你的prompt都記錄下來整理給我，我要記錄。
+## Demo Site
+應用程式已部署在 Streamlit Cloud：  
+🔗 https://aiotda.streamlit.app/
 
-### 助手
-好的 👍 你把規範的完整內容貼給我，我會：
-1. 把你給的 prompt 全部原封不動記錄下來。
-2. 幫你整理成一份清單或文件。
-3. 再依照規範幫你一步步做出線性回歸的模型。
+## Project Summary
+此專案的開發目標是提供一個互動式工具來理解線性回歸。  
+主要步驟：
+- 建立 Streamlit 應用程式  
+- 創建虛擬環境  
+- 安裝依賴套件  
+- 實作核心功能  
+- 最後部署至 Streamlit Cloud  
 
----
+## Development Log （依據 0_devLog.md）
+- **1.0–2.0**: 初始化設定，建立 `0_devLog.md` 與 `Todo.md`  
+- **3.0–4.0**: 修改與驗證專案計畫  
+- **5.0**: 執行計畫，建立 `app.py` (Streamlit 應用程式)  
+- **6.0–11.0**: 解決執行問題，建立 `requirements.txt`、設置虛擬環境、安裝依賴  
+- **12.0–13.0**: 成功執行 Streamlit 應用程式  
 
-### 使用者
-（貼上完整的專案說明與 To-Do List）
+## To-Do List for Linear Regression Implementation （依據 Todo.md）
 
-### 助手
-✅ 收到！我已經完整記錄下你提供的 prompt，整理如下……  
-（整理成 Project Summary + To-Do List 條列）
+### 1. Data Preparation
+- 載入資料集（CSV / NumPy array）  
+- 處理缺失值（若有）  
+- 拆分訓練 / 測試資料集  
+- 特徵縮放（如需，例：StandardScaler）  
 
----
+### 2. Model Implementation
+- 從零實作 Linear Regression（如需要）  
+- 初始化權重與偏差  
+- 定義假設函數 \( h(x) = wx + b \)  
+- 定義成本函數（MSE）  
+- 使用梯度下降法（Gradient Descent）最佳化  
+  - 計算梯度  
+  - 更新權重與偏差  
 
-### 使用者
-我需要你直接給我一個可以跑的實例，能讓我推到github上 然後 你把我給你的prompt整理一下好了。
+### 3. Training
+- 使用訓練集訓練模型  
+- 監控收斂情況（例：繪製成本函數變化圖）  
 
-### 助手
-太好了 👍 我幫你做兩件事：
-1. 整理 prompt 成 README.md 用的文件。
-2. 提供可直接跑的 Streamlit 線性回歸範例程式。  
-（附上 app.py、requirements.txt、README.md 範例）
+### 4. Evaluation
+- 在測試集上做預測  
+- 計算評估指標：  
+  - MSE  
+  - R² Score  
+- 視覺化預測 vs. 真實值  
 
----
+### 5. Prediction
+- 建立函式，能對新資料做預測  
 
-### 使用者
-那你告訴我我現在已經有github了 我要怎麼部署上去。
-
-### 助手
-👌 好，我一步步教你怎麼把專案部署到 Streamlit Cloud：  
-1. 建立 GitHub Repo  
-2. 本地建立專案結構  
-3. 推上 GitHub  
-4. 部署到 Streamlit Cloud  
-5. 成功後會得到 URL  
-（詳細步驟逐條列出）
-
----
-
-### 使用者
-我已經成功將 code 部署上去了，現在我需要你將我給你的 prompt 和對話弄成兩個，分別是 prompt.md 和 process.md。
-
-### 助手
-（整理出 prompt.md 與 process.md，提供完整內容）
+### 6. Documentation and Reporting
+- 撰寫程式文件  
+- 撰寫報告：總結實作、結果與結論
