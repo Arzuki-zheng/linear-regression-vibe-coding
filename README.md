@@ -11,7 +11,7 @@
 
 並即時觀察這些變化如何影響回歸線與離群點辨識。
 
-Demo 網站: [https://aiotda.streamlit.app/](https://aiotda.streamlit.app/)
+Demo 網站: [[https://aiotda.streamlit.app/](https://aiotda.streamlit.app/)](https://arzuki-zheng-linear-regression-vibe-coding-app-i3zznb.streamlit.app/)
 
 ---
 
